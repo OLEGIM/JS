@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Random;
 
 /**
@@ -18,11 +19,12 @@ public class MaxValue {
 
             Max = array[0];
             for(int i=0; i < array.length; i++){
-                if (Max>array[i]){
-                    Max=array[i];
+                if (Max < array[i]){
+                    Max = array[i];
                 }
             }
             System.out.println("Max = " + Max);
+            System.out.println(Arrays.toString(array));
         }
     }
 
